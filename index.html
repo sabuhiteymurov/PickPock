@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pickpock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"
+        ><img class="logo" alt="Omnifood logo" src="img/pickpock.png"
+      /></a>
+      <nav class="main-nav">
+        <div class="nav-links-container">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">How it works</a></li>
+            <li><a class="main-nav-link" href="#">Pricing</a></li>
+            <li><a class="main-nav-link" href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="signin-button-container">
+          <ul class="main-nav-list">
+            <li><button class="main-nav-button sign-in-button" href="">Sign in</button></li>
+            <li>
+              <button class="main-nav-button nav-cta" href="">Try it for free</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Sign-in -->
+      <div class="sign-in hidden">
+        <h2 class="heading-secondary sign-in-heading">Sign In</h2>
+        <div class="sign-up-buttons">
+          <a href="https://www.google.com/" class="signup-google s-button">Sign up via Google</a>
+          <a href="https://www.apple.com/" class="signup-apple s-button">Sign up via Apple</a>
+        </div>
+        <div class="or-text">OR</div>
+        <div class="sign-in-form">
+          <input type="email" class="sign-in-email s-input" maxlength="256" name="Email-3" data-name="Email 3" placeholder="Enter your e-mail" required="">
+          <input type="password" class="sign-in-password s-input" maxlength="256" name="Password-2" data-name="Password 2" placeholder="Password" required="">
+        </div>
+      </div>
+      <div class="sign-in-layer hidden"></div>
+      
+      <!-- <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button> -->
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-textbox">
+            <h1 class="heading-primary">
+              <span class="highlight">Let us deliver</span> your tailored boxes
+              to your door at affordable price
+            </h1>
+            <p class="hero-description">
+              PickPock is the first subscription box service that available
+              worldwide
+            </p>
+            <a href="#cta" class="btn btn--full">Try it for free now!</a>
+            <p class="btn-description">No credit card required</p>
+            <div class="reviews-box">
+              <p class="reviews-text">4.9 Rating based reviews on</p>
+              <div class="reviews-icons">
+                <img class="logo-1" src="img/review-icons/etsy.png" alt="Etsy icon" />
+                <img
+                  class="logo-2"
+                  src="https://global-uploads.webflow.com/61291616f786795f81183e55/613e5d0ba47a6b51a0e4dc55_capterra%201.png"
+                  alt="Amazon icon"
+                />
+                <img class="logo-3" src="img/review-icons/shopify.png" alt="Shopify icon" />
+              </div>
+            </div>
+          </div>
+          <div class="hero-imagebox">
+            <img
+              class="hero-img"
+              src="img/hero-min.jpg"
+              alt="A picture of box delivered to door"
+            />
+          </div>
+          <!-- <div class="getourapp">
+            <h2 class="heading-secondary">Get our app now</h2>
+            <p class="get-description">10% Discount for mobile orders</p>
+          </div>
+          <div class="hero-app-imagebox">
+            <img
+              class="hero-app-image"
+              src="img/app-max.png"
+              alt="A picture of our app on iPhone"
+            />
+            <div class="get-app-imgbox">
+              <a href="https://play.google.com/store/apps" class="app-link">
+                <img
+                  class="get-img"
+                  src="img/gplay.png"
+                  alt="Logo of the Google Play for getting our app"
+                />
+              </a>
+              <a href="https://www.apple.com/app-store/" class="app-link">
+                <img
+                  class="get-img"
+                  src="img/astore.png"
+                  alt="Logo of the App Store for getting our app"
+                />
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="section-partners">
+          <div class="container">
+              <h2 class="heading-partners">Our partners</h2>
+              <div class="partner-logos">
+                  <img src="img/partner-logos/disney.png" alt="Disney logo"/>
+                  <img class="herschel" src="img/partner-logos/herschel.png" alt="Herschel logo"/>
+                  <img class="iherb" src="img/partner-logos/iherb.png" alt="iHerb logo"/>
+                  <img src="img/partner-logos/citizen.png" alt="Citizen logo"/>
+                  <img src="img/partner-logos/petsmart.png" alt="Petsmart logo"/>
+              </div>
+          </div>
+      </section>
+      <section class="section-how">
+        <div class="container">
+          <h2 class="heading-secondary center-text">We make subscriptions <span class="highlight-sm">simple</span></h2>
+        </div>
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 1 -->
+          <div class="step-textbox">
+            <div class="step-heading">
+              <div class="longdash"></div>
+              <h3 class="subheading">Tell us your box type</h3>
+            </div>
+            <p class="step-text">
+              Choose your desired box type from over 200 hundred boxes, 
+              or tell us what you like (and what not) and our AI system 
+              will create a 100% personalized monthly boxes just for you.
+            </p>
+          </div>
+          <div class="step-imgbox">
+            <img src="img/il-select.png" class="step-img" alt="Illustration - select your box type"/>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="step-imgbox">
+            <img src="img/il-friends.png" class="step-img" alt="Illustration - user profile in our app"/>
+          </div>
+          <div class="step-textbox">
+            <div class="step-heading">
+              <div class="longdash"></div>
+              <h3 class="subheading">Find out your friends' box choices</h3>
+            </div>
+            <p class="step-text">
+              Check out your friends' profiles and see what they've subscribed to, send them a gift box, request a box from them and much more...
+            </p>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="step-textbox">
+            <div class="step-heading">
+              <div class="longdash"></div>
+              <h3 class="subheading">Subscribe with confidence</h3>
+            </div>
+            <p class="step-text">
+              Your personalized boxes will be stored in our warehouse for each month. Cancel online anytime, every box is backed by our guarantee.
+            </p>
+          </div>
+          <div class="step-imgbox">
+            <img src="img/il-delivery-1.png" class="step-img" alt="Illustration - select your box type"/>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="step-imgbox">
+            <img src="img/il-delivery-2.png" class="step-img" alt="Illustration - user profile in our app"/>
+          </div>
+          <div class="step-textbox">
+            <div class="step-heading">
+              <div class="longdash"></div>
+              <h3 class="subheading">Personalized delivery times</h3>
+            </div>
+            <p class="step-text">
+              Confirm your delivery date and we will deliver the boxes 24/7. You can change the delivery date six hours before delivery.
+            </p>
+          </div>
+
+          <!-- STEP 5 -->
+          <div class="step-textbox">
+            <div class="step-heading">
+              <div class="longdash"></div>
+              <h3 class="subheading">Contact us anytime</h3>
+            </div>
+            <p class="step-text">
+              If you have a question or problem, don't worry, we've got you covered. Contact us 24/7 on our website or app. We will get back to you as soon as possible.
+            </p>
+          </div>
+          <div class="step-imgbox">
+            <img src="img/il-contact.png" class="step-img" alt="Illustration - select your box type"/>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
