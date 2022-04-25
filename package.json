@@ -1,0 +1,23 @@
+{
+  "name": "pickpock",
+  "version": "1.1.9",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrTeymurov/PickPock.git"
+  },
+  "keywords": [
+    "Boxes",
+    "Subscription"
+  ],
+  "author": "Sabuhi Teymurov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrTeymurov/PickPock/issues"
+  },
+  "homepage": "https://github.com/MrTeymurov/PickPock#readme"
+}
