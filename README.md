@@ -11,7 +11,7 @@ Most people are very busy with their jobs, family and friends, and other importa
 
 ### Built with
 
-* Semantic HTML5 markup
+* Semantic HTML5
 * Advanced CSS custom properties
 * Native Javascript, advanced DOM
 * Icons from Font Awesome
