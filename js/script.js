@@ -1,8 +1,5 @@
 'use strict';
 
-///////////////////////////////////////
-// Sign in, Sign up window
-
 const signInButton = document.querySelector('.sign-in-button');
 const signUpButtons = document.querySelectorAll('.sign-up-button');
 const closeButton = document.querySelector('.btn--close-signin');
