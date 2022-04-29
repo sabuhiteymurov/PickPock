@@ -11,16 +11,17 @@ Most people are very busy with their jobs, family and friends, and other importa
 
 ### Built with
 
-• Semantic HTML5 markup
-• Advanced CSS custom properties
-• Native Javascript, advanced DOM
-• Icons from Font Awesome
-• Deploy by netlify.com
+* Semantic HTML5 markup
+* Advanced CSS custom properties
+* Native Javascript, advanced DOM
+* Icons from Font Awesome
+* Deploy by netlify.com
 
 ## Author
 
-• Sabuhi Teymurov - teymurovsabuhi@gmail.com
+* Sabuhi Teymurov - teymurovsabuhi@gmail.com
+* [My Twitter](https://twitter.com/Mr_Teymurov)
 
 ### License
 
-Don't claim as your own product... This is a Front-end project of my own. Everything in this project created and licensed by me. Some photographs or documents contained on the site may be copyrighted property of others. All such material is used with permission of the owner.
+Don't claim as your own product. This is a Front-end project of my own. Everything in this project created and licensed by me. Some photographs or documents contained on the site may be copyrighted property of others. All such material is used with permission of the owner.
