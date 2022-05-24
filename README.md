@@ -13,7 +13,7 @@ Most people are very busy with their jobs, family and friends, and other importa
 
 * Semantic HTML5
 * Advanced CSS custom properties
-* Native Javascript, advanced DOM
+* Vanilla Javascript, advanced DOM
 * Icons from Font Awesome
 * Deploy by netlify.com
 
