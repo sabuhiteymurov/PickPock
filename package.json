@@ -1,10 +1,11 @@
 {
   "name": "pickpock",
   "version": "1.1.9",
-  "description": "",
+  "description": "PickPock | Your Boxes",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,14 @@
   ],
   "author": "Sabuhi Teymurov",
   "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.5.0"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.6.0",
+    "@parcel/transformer-sass": "^2.5.0",
+    "@parcel/transformer-webmanifest": "^2.6.0"
+  },
   "bugs": {
     "url": "https://github.com/MrTeymurov/PickPock/issues"
   },
