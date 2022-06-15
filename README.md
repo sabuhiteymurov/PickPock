@@ -12,7 +12,7 @@ Most people are very busy with their jobs, family and friends, and other importa
 ### Built with
 
 * Semantic HTML5
-* Advanced CSS custom properties
+* Advanced SCSS custom properties
 * Vanilla Javascript, advanced DOM
 * Icons from Font Awesome
 * Deploy by netlify.com
