@@ -199,70 +199,32 @@ const planObserver = new IntersectionObserver(revealPlan, {
 
 allPlans.forEach(plan => planObserver.observe(plan));
 
-// Comma icon scroll effect
-/*
-let tY = 0;
-const comma = document.querySelector('.t-icon');
-const commascroller = function (entries, observer) {
-  const [entry] = entries;
-  if (!entry.isIntersecting) return;
-
-  document.addEventListener('wheel', checkScrollDirection);
-
-  function checkScrollDirection(event) {
-    if (checkScrollDirectionIsUp(event)) {
-      tY++;
-      console.log(tY);
-      comma.style.transform = (0, `${tY}rem`);
-    } else {
-      tY--;
-      comma.style.transform = (0, `${tY}rem`);
-    }
-  }
-
-  function checkScrollDirectionIsUp(event) {
-    if (event.wheelDelta) {
-      return event.wheelDelta > 0;
-    }
-    return event.deltaY < 0;
-  }
-  observer.unobserve(entry.target);
-};
-
-const testimonialObserver = new IntersectionObserver(commascroller, {
-  root: null,
-  threshold: 0.1,
-});
-
-testimonialObserver.observe(sectionTestimonials);
-*/
-
 ///////////////////////////////////////////////////////////
 // Lazy loading images
-const imgTargets = document.querySelectorAll('img[data-src]');
+// const imgTargets = document.querySelectorAll('img[data-src]');
 
-const loadImg = function (entries, observer) {
-  const [entry] = entries;
+// const loadImg = function (entries, observer) {
+//   const [entry] = entries;
 
-  if (!entry.isIntersecting) return;
+//   if (!entry.isIntersecting) return;
 
-  // Replace src with data-src
-  entry.target.src = entry.target.dataset.src;
+//   // Replace src with data-src
+//   entry.target.src = entry.target.dataset.src;
 
-  entry.target.addEventListener('load', function () {
-    entry.target.classList.remove('lazy-img');
-  });
+//   entry.target.addEventListener('load', function () {
+//     entry.target.classList.remove('lazy-img');
+//   });
 
-  observer.unobserve(entry.target);
-};
+//   observer.unobserve(entry.target);
+// };
 
-const imgObserver = new IntersectionObserver(loadImg, {
-  root: null,
-  threshold: 0,
-  rootMargin: '200px',
-});
+// const imgObserver = new IntersectionObserver(loadImg, {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: '200px',
+// });
 
-imgTargets.forEach(img => imgObserver.observe(img));
+// imgTargets.forEach(img => imgObserver.observe(img));
 
 ///////////////////////////////////////////////////////////
 // Setting copyright year
