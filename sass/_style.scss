@@ -921,9 +921,9 @@
 }
 
 /* Lazy loading images */
-.lazy-img {
-  filter: blur(20px);
-}
+// .lazy-img {
+//   filter: blur(20px);
+// }
 
 /* Reveal sections */
 section.section {
@@ -953,4 +953,3 @@ section.section {
   opacity: 0;
   transform: translateX(-15rem);
 }
-
