@@ -199,6 +199,7 @@ const planObserver = new IntersectionObserver(revealPlan, {
 
 allPlans.forEach(plan => planObserver.observe(plan));
 
+// Problem with sass
 ///////////////////////////////////////////////////////////
 // Lazy loading images
 // const imgTargets = document.querySelectorAll('img[data-src]');
