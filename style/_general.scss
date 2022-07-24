@@ -6,6 +6,17 @@
 
 html {
   font-size: 62.5%;
+  @include respond(mini-laptop) {
+    font-size: 56.25%;
+  }
+
+  @include respond(med-tab) {
+    font-size: 45%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -26,6 +37,13 @@ body {
   margin: 0 auto;
   max-width: 120rem;
   padding: 0 3.2rem;
+
+  @include respond(big-tab) {
+    padding: 0 4.4rem;
+  }
+  @include respond(med-tab) {
+    padding: 0 3.2rem;
+  }
 }
 
 .grid {
@@ -70,6 +88,9 @@ body {
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
+  @include respond(big-tab) {
+    font-size: 4.8rem;
+  }
 }
 
 .heading-secondary {

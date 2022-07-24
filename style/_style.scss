@@ -45,6 +45,12 @@
   justify-content: center;
   align-items: center;
   gap: 25.6rem;
+  @include respond(mini-laptop) {
+    gap: 20rem;
+  }
+  @include respond(big-tab) {
+    gap: 15rem;
+  }
 }
 
 .main-nav-list {
@@ -363,6 +369,16 @@
   grid-template-columns: 1fr 1fr;
   align-items: flex-start;
   gap: 9.6rem;
+
+  &-textbox {
+    @include respond(big-tab) {
+      padding-left: 3.2rem;
+    }
+  }
+
+  @include respond(big-tab) {
+    gap: 8rem;
+  }
 }
 
 .hero-description {
@@ -417,9 +433,17 @@
 
 .hero-img {
   width: 62.4rem;
-  height: 41.6rem;
   border-radius: 30px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+
+  @include respond(mini-laptop) {
+    width: 55rem;
+    height: 36.7rem;
+  }
+  @include respond(big-tab) {
+    height: 33.3rem;
+    width: 50rem;
+  }
 }
 
 /***************************/
@@ -654,11 +678,12 @@
 
 .t-icon {
   position: absolute;
-  /* top: -40%; */
   z-index: -1;
   left: 7rem;
   bottom: 18rem;
-  /* bottom: 22rem; */
+  @include respond(big-tab) {
+    left: 11rem;
+  }
 }
 
 .t-container-small {
@@ -670,7 +695,10 @@
   font-size: 5.2rem;
   padding-left: 12rem;
   padding-top: 6rem;
-  /* padding-right: 28rem; */
+
+  @include respond(big-tab) {
+    padding-left: 16rem;
+  }
 }
 
 .t-heading-highlight {
@@ -684,13 +712,27 @@
   width: 91.9rem;
   height: 50rem;
   top: -10rem;
-  /* left: 40%; */
   left: 60rem;
   border-top-left-radius: 4rem;
   border-bottom-left-radius: 4rem;
-
   z-index: -1;
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+
+  @include respond(med-desktop) {
+    width: 80rem;
+  }
+  @include respond(min-desktop) {
+    width: 60rem;
+    height: 46rem;
+    top: -6rem;
+  }
+  @include respond(big-tab) {
+    left: 50rem;
+  }
+
+  @include respond(big-desktop) {
+    width: 100rem;
+  }
 }
 
 /* SLIDER */
@@ -701,6 +743,13 @@
   width: 70rem;
   height: 30rem;
   overflow: hidden;
+  @include respond(min-desktop) {
+    width: 40%;
+    margin-left: 24rem;
+  }
+  @include respond(big-tab) {
+    margin-left: 10rem;
+  }
 }
 
 .slide {
@@ -708,9 +757,6 @@
   position: absolute;
   top: 0;
   height: 30rem;
-  /* top: 3rem;
-  left: 28rem; */
-  /* padding-left: 8rem; */
   transition: transform 0.25s;
 }
 
@@ -747,6 +793,9 @@
   line-height: 1.9;
   letter-spacing: 0.85px;
   width: 50rem;
+  @include respond(min-desktop) {
+    width: 45rem;
+  }
 }
 
 .slider-container {
@@ -757,6 +806,14 @@
   left: 69rem;
   top: 29.5rem;
   width: 65rem;
+  @include respond(min-desktop) {
+    width: 45rem;
+    top: 30.5rem;
+    left: 64rem;
+  }
+  @include respond(big-tab) {
+    left: 53rem;
+  }
 }
 
 .swiper {

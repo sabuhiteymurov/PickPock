@@ -17,7 +17,8 @@
   "author": "Sabuhi Teymurov",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.5.0"
+    "parcel": "^2.5.0",
+    "sass": "^1.54.0"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.0",

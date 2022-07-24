@@ -14,14 +14,14 @@ breakpoint arguments:
 
 @mixin respond($breakpoint) {
   @if $breakpoint == mini-phone {
-    // 600px
+    // 400px
     @media (max-width: 25em) {
       @content;
     }
   }
 
   @if $breakpoint == med-phone {
-    // 600px
+    // 500px
     @media (max-width: 31.25em) {
       @content;
     }
@@ -62,9 +62,23 @@ breakpoint arguments:
     }
   }
 
+  @if $breakpoint == min-desktop {
+    // 1400px
+    @media (max-width: 87.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == med-desktop {
+    // 1548px
+    @media (max-width: 96.75em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == big-desktop {
-    // 2000px
-    @media (min-width: 125em) {
+    // 1920px
+    @media (min-width: 120em) {
       @content;
     }
   }
