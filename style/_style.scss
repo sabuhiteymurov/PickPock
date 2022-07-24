@@ -370,14 +370,25 @@
   align-items: flex-start;
   gap: 9.6rem;
 
+  @include respond(big-tab) {
+    gap: 8rem;
+  }
+
+  @include respond(tab) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 120rem;
+    text-align: center;
+    gap: 8rem;
+  }
+
   &-textbox {
     @include respond(big-tab) {
       padding-left: 3.2rem;
     }
-  }
-
-  @include respond(big-tab) {
-    gap: 8rem;
+    @include respond(tab) {
+      padding: 0;
+    }
   }
 }
 
@@ -391,9 +402,13 @@
 .btn-description {
   margin-top: 1.6rem;
   font-size: 1.6rem;
-  text-align: center;
-  width: 20.8rem;
+  text-align: left;
+  padding-left: 3.2rem;
   color: #666;
+  @include respond(tab) {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .reviews-box {
@@ -402,6 +417,9 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1.2rem;
+  @include respond(tab) {
+    justify-content: center;
+  }
 }
 
 .reviews-text {
@@ -443,6 +461,10 @@
   @include respond(big-tab) {
     height: 33.3rem;
     width: 50rem;
+  }
+  @include respond(tab) {
+    height: 41.2rem;
+    width: 62.4rem;
   }
 }
 
@@ -523,7 +545,6 @@
 
 .section-pricing {
   background-color: #e5f7ff;
-  /* #e5f7ff */
   margin-top: 3.2rem;
   padding: 9.6rem 0;
   position: relative;
@@ -533,11 +554,16 @@
   height: 40rem;
   position: absolute;
   object-fit: contain;
-  /* right: 74%;
-  top: 14%; */
   left: -8.5rem;
   top: 16rem;
   transition: transform 1s, opacity 1s;
+
+  @include respond(min-desktop) {
+    height: 36rem;
+  }
+  @include respond(big-tab) {
+    left: -10rem;
+  }
 }
 
 .pricing-plan-container {
@@ -689,6 +715,12 @@
 .t-container-small {
   display: flex;
   justify-content: flex-start;
+
+  @include respond(tab) {
+    flex-direction: column;
+    align-items: center;
+    gap: 6.4rem;
+  }
 }
 
 .heading-secondary.t-heading {
@@ -728,6 +760,11 @@
   }
   @include respond(big-tab) {
     left: 50rem;
+  }
+
+  @include respond(tab) {
+    top: 28rem;
+    left: 33.5rem;
   }
 
   @include respond(big-desktop) {
@@ -813,6 +850,10 @@
   }
   @include respond(big-tab) {
     left: 53rem;
+  }
+  @include respond(tab) {
+    left: 37rem;
+    top: 65rem;
   }
 }
 
