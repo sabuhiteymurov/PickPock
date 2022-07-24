@@ -17,12 +17,11 @@
   "author": "Sabuhi Teymurov",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.5.0",
-    "sass": "^1.54.0"
+    "parcel": "^2.6.2"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.0",
-    "@parcel/transformer-sass": "^2.5.0",
+    "@parcel/transformer-sass": "^2.6.2",
     "@parcel/transformer-webmanifest": "^2.6.0"
   },
   "bugs": {

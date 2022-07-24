@@ -466,6 +466,14 @@
     height: 41.2rem;
     width: 62.4rem;
   }
+  @include respond(phone) {
+    height: 33.3rem;
+    width: 50rem;
+  }
+  @include respond(mini-phone) {
+    height: auto;
+    width: 40rem;
+  }
 }
 
 /***************************/
@@ -523,6 +531,32 @@
   -webkit-box-align: center;
 }
 
+.step-textbox-1 {
+  @include respond(phone) {
+    grid-row: 2;
+  }
+}
+.step-textbox-2 {
+  @include respond(phone) {
+    grid-row: 4;
+  }
+}
+.step-textbox-3 {
+  @include respond(phone) {
+    grid-row: 6;
+  }
+}
+.step-textbox-4 {
+  @include respond(phone) {
+    grid-row: 8;
+  }
+}
+.step-textbox-5 {
+  @include respond(phone) {
+    grid-row: 10;
+  }
+}
+
 .step-text {
   font-size: 2rem;
   line-height: 1.8;
@@ -533,6 +567,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.step-imgbox-1 {
+  @include respond(phone) {
+    grid-row: 1;
+  }
+}
+.step-imgbox-2 {
+  @include respond(phone) {
+    grid-row: 3;
+  }
+}
+.step-imgbox-3 {
+  @include respond(phone) {
+    grid-row: 5;
+  }
+}
+.step-imgbox-4 {
+  @include respond(phone) {
+    grid-row: 7;
+  }
+}
+.step-imgbox-5 {
+  @include respond(phone) {
+    grid-row: 9;
+  }
 }
 
 .step-img {
@@ -564,14 +624,23 @@
   @include respond(big-tab) {
     left: -10rem;
   }
+  @include respond(phone) {
+    left: -12rem;
+    height: 30rem;
+  }
 }
 
 .pricing-plan-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
+  @include respond(tab) {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+}
 .pricing-plan {
   z-index: 1;
   width: 32%;
@@ -580,6 +649,15 @@
   border-radius: 30px;
   background-color: #fff;
   transition: transform 1s, opacity 1s;
+  @include respond(tab) {
+    width: 45%;
+  }
+  @include respond(phone) {
+    width: 55%;
+  }
+  @include respond(med-phone) {
+    width: 70%;
+  }
 }
 
 .plan--1 {
@@ -696,6 +774,10 @@
 .section.section-testimonials {
   padding-bottom: 25rem;
   padding-top: 32rem;
+  @include respond(tab) {
+    padding-top: 28rem;
+    padding-bottom: 18rem;
+  }
 }
 
 .t-container {
@@ -710,6 +792,16 @@
   @include respond(big-tab) {
     left: 11rem;
   }
+  @include respond(tab) {
+    top: -13rem;
+    left: 32rem;
+  }
+  @include respond(phone) {
+    left: 25rem;
+  }
+  @include respond(med-phone) {
+    left: 10rem;
+  }
 }
 
 .t-container-small {
@@ -719,7 +811,7 @@
   @include respond(tab) {
     flex-direction: column;
     align-items: center;
-    gap: 6.4rem;
+    gap: 16rem;
   }
 }
 
@@ -730,6 +822,12 @@
 
   @include respond(big-tab) {
     padding-left: 16rem;
+  }
+  @include respond(tab) {
+    margin-bottom: 0;
+  }
+  @include respond(med-phone) {
+    padding-left: 0;
   }
 }
 
@@ -764,7 +862,22 @@
 
   @include respond(tab) {
     top: 28rem;
-    left: 33.5rem;
+    left: 20rem;
+  }
+  @include respond(min-tab) {
+    left: 15rem;
+  }
+
+  @include respond(phone) {
+    left: 5rem;
+  }
+  @include respond(med-phone) {
+    left: 3.2rem;
+    width: 50rem;
+  }
+  @include respond(mini-phone) {
+    width: 40rem;
+    height: 50rem;
   }
 
   @include respond(big-desktop) {
@@ -781,11 +894,21 @@
   height: 30rem;
   overflow: hidden;
   @include respond(min-desktop) {
-    width: 40%;
     margin-left: 24rem;
+    width: 55rem;
   }
   @include respond(big-tab) {
     margin-left: 10rem;
+  }
+  @include respond(tab) {
+    margin-left: 0;
+    width: 50rem;
+  }
+  @include respond(med-phone) {
+    width: 40rem;
+  }
+  @include respond(mini-phone) {
+    width: 35rem;
   }
 }
 
@@ -833,6 +956,9 @@
   @include respond(min-desktop) {
     width: 45rem;
   }
+  @include respond(med-phone) {
+    width: 35rem;
+  }
 }
 
 .slider-container {
@@ -852,8 +978,24 @@
     left: 53rem;
   }
   @include respond(tab) {
-    left: 37rem;
+    left: 29rem;
     top: 65rem;
+  }
+  @include respond(min-tab) {
+    left: 22rem;
+  }
+  @include respond(phone) {
+    left: 15rem;
+  }
+  @include respond(med-phone) {
+    left: 8rem;
+    top: 67rem;
+    width: 35rem;
+  }
+  @include respond(mini-phone) {
+    width: 30rem;
+    left: 6rem;
+    top: 68rem;
   }
 }
 
@@ -949,6 +1091,10 @@
 .hero-app-image {
   height: 59rem;
   width: 30rem;
+  @include respond(med-phone) {
+    height: 40rem;
+    width: 20.4rem;
+  }
 }
 
 .get-app-imgbox {

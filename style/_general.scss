@@ -24,7 +24,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  /* position: relative; */
+  position: relative;
+  overflow-x: hidden !important;
 }
 
 /***************************/
@@ -46,6 +47,35 @@ body {
   }
 }
 
+.display-desktop {
+  @include respond(mini-laptop) {
+    display: block;
+  }
+
+  @include respond(tab) {
+    display: none !important;
+  }
+
+  @include respond(big-desktop) {
+    display: block;
+  }
+}
+
+.display-mobile {
+  display: none;
+  @include respond(mini-laptop) {
+    display: none;
+  }
+
+  @include respond(tab) {
+    display: block;
+  }
+
+  @include respond(big-desktop) {
+    display: none;
+  }
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -58,6 +88,9 @@ body {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid--3-cols {

@@ -34,6 +34,13 @@ breakpoint arguments:
     }
   }
 
+  @if $breakpoint == min-tab {
+    // 700px
+    @media (max-width: 43.75em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tab {
     // 800px
     @media (max-width: 50em) {

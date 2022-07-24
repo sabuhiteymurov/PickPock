@@ -14,6 +14,9 @@ const sectionPartners = document.querySelector('.section-partners');
 const sectionHero = document.querySelector('.section-hero');
 const sectionTestimonials = document.querySelector('.section-testimonials');
 const logo = document.querySelector('.logo-link');
+const mobileMenuButton = document.querySelector('.btn-mobile-nav-menu');
+const mobileCloseButton = document.querySelector('.btn-mobile-nav-close');
+const mobileNav = document.querySelector('.mobile-nav');
 
 ///////////////////////////////////////////////////////////
 // Page navigation
@@ -199,8 +202,6 @@ const planObserver = new IntersectionObserver(revealPlan, {
 
 allPlans.forEach(plan => planObserver.observe(plan));
 
-
-
 ///////////////////////////////////////////////////////////
 // Problem with sass, issue with lazy loading image effects
 // Lazy loading images
@@ -284,3 +285,18 @@ const slider = function () {
   });
 };
 slider();
+
+// Mobile Nav
+mobileMenuButton.addEventListener('click', () => {
+  mobileNav.style.transform = 'translateX(0)';
+  mobileNav.style.opacity = '1';
+  mobileNav.style.visibility = 'visible';
+  mobileCloseButton.style.display = 'block';
+});
+
+mobileCloseButton.addEventListener('click', () => {
+  mobileNav.style.transform = 'translateX(100%)';
+  mobileNav.style.visibility = 'hidden';
+  mobileNav.style.opacity = '0';
+  mobileCloseButton.style.display = 'hidden';
+});

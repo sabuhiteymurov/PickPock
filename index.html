@@ -30,7 +30,91 @@
       <a href="#" class="logo-link"
         ><img class="logo" alt="Omnifood logo" src="img/pickpock.png"
       /></a>
-      <nav class="main-nav">
+
+      <button class="btn-mobile-nav btn-mobile-nav-menu display-mobile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 icon-mobile-nav"
+          name="menu-outline"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+
+      <nav class="mobile-nav">
+        <div class="mobile-nav--overlay">&nbsp;</div>
+        <button class="btn-mobile-nav btn-mobile-nav-close display-mobile">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 icon-mobile-nav"
+            name="close-outline"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div class="main-nav-mobile">
+          <div class="nav-links-container nav-links-container-mobile">
+            <ul class="main-nav-list main-nav-list-mobile">
+              <li>
+                <a
+                  class="main-nav-link main-nav-link-mobile"
+                  href="#section--2"
+                >
+                  How it works
+                </a>
+              </li>
+              <li>
+                <a class="main-nav-link main-nav-link-mobile" href="#section--3"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link main-nav-link-mobile" href="#section--4"
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="signin-button-container signin-button-container-mobile">
+            <ul class="main-nav-list main-nav-list-mobile">
+              <li>
+                <button
+                  class="main-nav-link main-nav-button sign-in-button main-nav-button-mobile"
+                  href=""
+                >
+                  Sign in
+                </button>
+              </li>
+              <li>
+                <button
+                  class="main-nav-link main-nav-button nav-cta sign-up-button main-nav-button-mobile"
+                  href=""
+                >
+                  Try it for free
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="main-nav display-desktop">
         <div class="nav-links-container">
           <ul class="main-nav-list">
             <li>
@@ -145,7 +229,7 @@
         </div>
         <div class="container grid grid--2-cols grid--center-v">
           <!-- STEP 1 -->
-          <div class="step-textbox">
+          <div class="step-textbox step-textbox-1">
             <div class="step-heading">
               <div class="longdash"></div>
               <h3 class="subheading">Tell us your box type</h3>
@@ -156,7 +240,7 @@
               100% personalized monthly boxes just for you.
             </p>
           </div>
-          <div class="step-imgbox">
+          <div class="step-imgbox step-imgbox-1">
             <img
               src="img/il-select.png"
               data-src="img/il-select.png"
@@ -166,7 +250,7 @@
           </div>
 
           <!-- STEP 2 -->
-          <div class="step-imgbox">
+          <div class="step-imgbox step-imgbox-2">
             <img
               src="img/il-friends.png"
               data-src="img/il-friends.png"
@@ -174,7 +258,7 @@
               alt="Illustration - user profile in our app"
             />
           </div>
-          <div class="step-textbox">
+          <div class="step-textbox step-textbox-2">
             <div class="step-heading">
               <div class="longdash"></div>
               <h3 class="subheading">Find out your friends' box choices</h3>
@@ -186,7 +270,7 @@
           </div>
 
           <!-- STEP 3 -->
-          <div class="step-textbox">
+          <div class="step-textbox step-textbox-3">
             <div class="step-heading">
               <div class="longdash"></div>
               <h3 class="subheading">Subscribe with confidence</h3>
@@ -197,7 +281,7 @@
               guarantee.
             </p>
           </div>
-          <div class="step-imgbox">
+          <div class="step-imgbox step-imgbox-3">
             <img
               src="img/il-warehouse.png"
               data-src="img/il-warehouse.png"
@@ -207,7 +291,7 @@
           </div>
 
           <!-- STEP 4 -->
-          <div class="step-imgbox">
+          <div class="step-imgbox step-imgbox-4">
             <img
               src="img/il-delivery.png"
               data-src="img/il-delivery.png"
@@ -215,7 +299,7 @@
               alt="Illustration - user profile in our app"
             />
           </div>
-          <div class="step-textbox">
+          <div class="step-textbox step-textbox-4">
             <div class="step-heading">
               <div class="longdash"></div>
               <h3 class="subheading">Personalized delivery times</h3>
@@ -227,7 +311,7 @@
           </div>
 
           <!-- STEP 5 -->
-          <div class="step-textbox">
+          <div class="step-textbox step-textbox-5">
             <div class="step-heading">
               <div class="longdash"></div>
               <h3 class="subheading">Contact us anytime</h3>
@@ -238,7 +322,7 @@
               to you as soon as possible.
             </p>
           </div>
-          <div class="step-imgbox">
+          <div class="step-imgbox step-imgbox-5">
             <img
               src="img/il-contact.png"
               data-src="img/il-contact.png"
@@ -543,12 +627,6 @@
           </li>
           <li class="footer__item">
             <a class="footer__link" href="#">Privacy Policy</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Careers</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Blog</a>
           </li>
           <li class="footer__item">
             <a class="footer__link" href="https://twitter.com/Mr_Teymurov"
