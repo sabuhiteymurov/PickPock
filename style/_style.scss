@@ -144,6 +144,14 @@
   z-index: 1001;
   padding: 5rem 6rem;
   transition: all 0.5s;
+
+  @include respond(tab) {
+    padding: 3rem 4rem;
+    width: 50rem;
+  }
+  @include respond(med-phone) {
+    width: 45rem;
+  }
 }
 
 .btn--close-signin {
@@ -326,6 +334,14 @@
   align-items: center;
   justify-content: center; */
   transition: all 0.5s;
+
+  @include respond(tab) {
+    padding: 3rem 4rem;
+    width: 52rem;
+  }
+  @include respond(med-phone) {
+    width: 45rem;
+  }
 }
 
 .sign-up-layer {
@@ -498,12 +514,25 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
 
-.partner-logos img {
-  height: 3.6rem;
-  filter: brightness(0);
-  opacity: 50%;
+  @include respond(phone) {
+    justify-content: space-between;
+  }
+
+  img {
+    height: 3.6rem;
+    filter: brightness(0);
+    opacity: 50%;
+    @include respond(phone) {
+      height: 3rem;
+    }
+    @include respond(med-phone) {
+      height: 2.4rem;
+    }
+    @include respond(mini-phone) {
+      height: 2rem;
+    }
+  }
 }
 
 .partner-logos .herschel {
@@ -624,8 +653,16 @@
   @include respond(big-tab) {
     left: -10rem;
   }
-  @include respond(phone) {
+  @include respond(tab) {
     left: -12rem;
+    height: 40rem;
+    top: 22rem;
+  }
+  @include respond(phone) {
+    left: -15rem;
+    height: 30rem;
+  }
+  @include respond(med-phone) {
     height: 30rem;
   }
 }
@@ -643,20 +680,18 @@
 }
 .pricing-plan {
   z-index: 1;
-  width: 32%;
+  width: 36.4rem;
   padding-top: 60px;
   padding-bottom: 80px;
   border-radius: 30px;
   background-color: #fff;
   transition: transform 1s, opacity 1s;
+
   @include respond(tab) {
-    width: 45%;
-  }
-  @include respond(phone) {
-    width: 55%;
+    width: 40rem;
   }
   @include respond(med-phone) {
-    width: 70%;
+    width: 36rem;
   }
 }
 
@@ -1086,14 +1121,19 @@
   right: 50%;
   top: 50%;
   z-index: 2;
+
+  @include respond(med-phone) {
+    top: 53%;
+    transform: translate(50%, -27.5%);
+  }
 }
 
 .hero-app-image {
   height: 59rem;
   width: 30rem;
   @include respond(med-phone) {
-    height: 40rem;
-    width: 20.4rem;
+    height: 45rem;
+    width: auto;
   }
 }
 
@@ -1103,11 +1143,18 @@
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
+  @include respond(med-phone) {
+    gap: 0.5rem;
+  }
 }
 
 .get-img {
   height: 6.4rem;
   width: 20rem;
+  @include respond(med-phone) {
+    width: 15rem;
+    height: auto;
+  }
 }
 
 /***************************/
