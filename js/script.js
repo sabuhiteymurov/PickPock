@@ -1,6 +1,6 @@
 'use strict';
 
-const signInButton = document.querySelector('.sign-in-button');
+const signInButtons = document.querySelectorAll('.sign-in-button');
 const signUpButtons = document.querySelectorAll('.sign-up-button');
 const closeButton = document.querySelector('.btn--close-signin');
 const closeButton2 = document.querySelector('.btn--close-signup');
@@ -22,15 +22,15 @@ const mobileNav = document.querySelector('.mobile-nav');
 // Page navigation
 
 // Smooth scrolling: Event Delegation
-document
-  .querySelector('.nav-links-container')
-  .addEventListener('click', function (e) {
+document.querySelectorAll('.nav-links-container').forEach(container => {
+  container.addEventListener('click', function (e) {
     e.preventDefault();
     if (e.target.classList.contains('main-nav-link')) {
       const id = e.target.getAttribute('href');
       document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
     }
   });
+});
 
 logo.addEventListener('click', function (e) {
   e.preventDefault();
@@ -114,7 +114,9 @@ const closeSignUp = function () {
   signUpOverlay.classList.add('hidden');
 };
 
-signInButton.addEventListener('click', openSignIn);
+signInButtons.forEach(button => {
+  button.addEventListener('click', openSignIn);
+});
 closeButton.addEventListener('click', closeSignIn);
 signInOverlay.addEventListener('click', closeSignIn);
 
