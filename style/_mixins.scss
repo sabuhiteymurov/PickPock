@@ -13,6 +13,12 @@ breakpoint arguments:
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == smallest-phone {
+    // 368px
+    @media (max-width: 23em) {
+      @content;
+    }
+  }
   @if $breakpoint == mini-phone {
     // 400px
     @media (max-width: 25em) {

@@ -13,6 +13,9 @@ html {
   @include respond(med-tab) {
     font-size: 45%;
   }
+  @include respond(smallest-phone) {
+    font-size: 40%;
+  }
 
   @include respond(big-desktop) {
     font-size: 75%;
