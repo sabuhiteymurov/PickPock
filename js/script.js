@@ -290,15 +290,17 @@ slider();
 
 // Mobile Nav
 mobileMenuButton.addEventListener('click', () => {
-  mobileNav.style.transform = 'translateX(0)';
-  mobileNav.style.opacity = '1';
-  mobileNav.style.visibility = 'visible';
-  mobileCloseButton.style.display = 'block';
+  mobileNav.classList.remove('display-none');
+  setTimeout(() => {
+    mobileNav.classList.toggle('nav-open');
+    mobileCloseButton.style.display = 'block';
+  }, 100);
 });
 
 mobileCloseButton.addEventListener('click', () => {
-  mobileNav.style.transform = 'translateX(100%)';
-  mobileNav.style.visibility = 'hidden';
-  mobileNav.style.opacity = '0';
+  mobileNav.classList.toggle('nav-open');
   mobileCloseButton.style.display = 'hidden';
+  setTimeout(() => {
+    mobileNav.classList.add('display-none');
+  }, 500);
 });

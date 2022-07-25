@@ -49,8 +49,7 @@
         </svg>
       </button>
 
-      <nav class="mobile-nav">
-        <div class="mobile-nav--overlay">&nbsp;</div>
+      <nav class="mobile-nav display-none">
         <button class="btn-mobile-nav btn-mobile-nav-close display-mobile">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -647,96 +646,98 @@
       </footer>
     </main>
 
-    <!-- Sign-in -->
-    <div class="sign-in hidden">
-      <button class="btn--close-signin">&times;</button>
-      <h2 class="heading-secondary sign-in-heading">Sign in</h2>
-      <div class="sign-up-buttons">
-        <a href="https://www.google.com/" class="signup-google s-button"
-          >Sign in with Google</a
-        >
-        <a href="https://www.apple.com/" class="signup-apple s-button"
-          >Sign in with Apple</a
-        >
+    <div class="sign-in-up-container">
+      <!-- Sign-in -->
+      <div class="sign-in hidden">
+        <button class="btn--close-signin">&times;</button>
+        <h2 class="heading-secondary sign-in-heading">Sign in</h2>
+        <div class="sign-up-buttons">
+          <a href="https://www.google.com/" class="signup-google s-button"
+            >Sign in with Google</a
+          >
+          <a href="https://www.apple.com/" class="signup-apple s-button"
+            >Sign in with Apple</a
+          >
+        </div>
+        <div class="or-text">OR</div>
+        <form class="sign-in-form">
+          <label>Email Address</label>
+          <input
+            type="email"
+            class="sign-in-email s-input"
+            maxlength="256"
+            name="Email-1"
+            data-name="Email 1"
+            required=""
+          />
+          <label>Password</label>
+          <input
+            type="password"
+            class="sign-in-password s-input"
+            maxlength="256"
+            name="Password-1"
+            data-name="Password 1"
+            required=""
+          />
+          <button class="btn btn--form">Continue &rarr;</button>
+          <p class="signin-subtext">
+            By clicking the Continue button, you agree to the
+            <a class="subtext-link">privacy policy.</a>
+          </p>
+        </form>
       </div>
-      <div class="or-text">OR</div>
-      <form class="sign-in-form">
-        <label>Email Address</label>
-        <input
-          type="email"
-          class="sign-in-email s-input"
-          maxlength="256"
-          name="Email-1"
-          data-name="Email 1"
-          required=""
-        />
-        <label>Password</label>
-        <input
-          type="password"
-          class="sign-in-password s-input"
-          maxlength="256"
-          name="Password-1"
-          data-name="Password 1"
-          required=""
-        />
-        <button class="btn btn--form">Continue &rarr;</button>
-        <p class="signin-subtext">
-          By clicking the Continue button, you agree to the
-          <a class="subtext-link">privacy policy.</a>
-        </p>
-      </form>
-    </div>
-    <div class="sign-in-layer hidden"></div>
+      <div class="sign-in-layer hidden"></div>
 
-    <!-- Sign-up -->
-    <div class="sign-up hidden">
-      <button class="btn--close-signup">&times;</button>
-      <h2 class="heading-secondary sign-in-heading">Sign up</h2>
-      <div class="sign-up-buttons">
-        <a href="https://www.google.com/" class="signup-google s-button"
-          >Sign up with Google</a
-        >
-        <a href="https://www.apple.com/" class="signup-apple s-button"
-          >Sign up with Apple</a
-        >
+      <!-- Sign-up -->
+      <div class="sign-up hidden">
+        <button class="btn--close-signup">&times;</button>
+        <h2 class="heading-secondary sign-in-heading">Sign up</h2>
+        <div class="sign-up-buttons">
+          <a href="https://www.google.com/" class="signup-google s-button"
+            >Sign up with Google</a
+          >
+          <a href="https://www.apple.com/" class="signup-apple s-button"
+            >Sign up with Apple</a
+          >
+        </div>
+        <div class="or-text">OR</div>
+        <form class="sign-in-form">
+          <label>Full Name</label>
+          <input
+            type="text"
+            class="sign-in-email s-input"
+            maxlength="256"
+            name="Email-3"
+            data-name="Email 3"
+            required=""
+          />
+          <label>Email Address</label>
+          <input
+            type="email"
+            class="sign-in-email s-input"
+            maxlength="256"
+            name="Email-3"
+            data-name="Email 3"
+            required=""
+          />
+          <label>Password</label>
+          <input
+            type="password"
+            class="sign-in-password s-input"
+            maxlength="256"
+            name="Password-2"
+            data-name="Password 2"
+            required=""
+          />
+          <button class="btn btn--form">Continue &rarr;</button>
+          <p class="signin-subtext">
+            By clicking the Continue button, you agree to the
+            <a class="subtext-link">terms of service</a> and
+            <a class="subtext-link">privacy policy.</a>
+          </p>
+        </form>
       </div>
-      <div class="or-text">OR</div>
-      <form class="sign-in-form">
-        <label>Full Name</label>
-        <input
-          type="text"
-          class="sign-in-email s-input"
-          maxlength="256"
-          name="Email-3"
-          data-name="Email 3"
-          required=""
-        />
-        <label>Email Address</label>
-        <input
-          type="email"
-          class="sign-in-email s-input"
-          maxlength="256"
-          name="Email-3"
-          data-name="Email 3"
-          required=""
-        />
-        <label>Password</label>
-        <input
-          type="password"
-          class="sign-in-password s-input"
-          maxlength="256"
-          name="Password-2"
-          data-name="Password 2"
-          required=""
-        />
-        <button class="btn btn--form">Continue &rarr;</button>
-        <p class="signin-subtext">
-          By clicking the Continue button, you agree to the
-          <a class="subtext-link">terms of service</a> and
-          <a class="subtext-link">privacy policy.</a>
-        </p>
-      </form>
+      <div class="sign-up-layer hidden"></div>
     </div>
-    <div class="sign-up-layer hidden"></div>
   </body>
 </html>
