@@ -692,6 +692,13 @@
   background-color: #fff;
   transition: transform 1s, opacity 1s;
 
+  @include respond(big-tab) {
+    width: 32rem;
+  }
+  @include respond(med-tab) {
+    width: 34rem;
+  }
+
   @include respond(tab) {
     width: 40rem;
   }
